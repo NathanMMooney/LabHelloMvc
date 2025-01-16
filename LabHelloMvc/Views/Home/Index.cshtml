@@ -1,8 +1,10 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model LabHelloMvc.Models.Person
+
+@{
+	ViewData["Title"] = "Names";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+	<div class="text-center">
+	<p>First Name: @Model.FirstName</p>
+	<p>Last Name: @Model.LastName</p>
+	</div>;
